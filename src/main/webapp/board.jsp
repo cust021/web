@@ -2,6 +2,7 @@
 <%@page import="java.sql.*"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+	    <%@ include file = "/include/common.jsp" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,6 +10,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<jsp:include page="/include/header.jsp"/>
 	<%
 	Class.forName("org.mariadb.jdbc.Driver");
 	String url = "jdbc:mariadb://localhost:3306/kd";
@@ -21,7 +23,7 @@
 	%>
 	<table border="1">
 		<tr>
-			<th>번호</th>
+			<th>번호</th> 
 			<th>제목</th>
 			<th>작성자</th>
 			<th>조회수</th>

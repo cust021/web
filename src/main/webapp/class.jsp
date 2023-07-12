@@ -24,7 +24,6 @@
 		<th>번호</th>
 		<th>이름</th>
 		<th>몰라</th>
-
 	</tr>
 <%
 while(rs.next()) {
@@ -33,7 +32,6 @@ while(rs.next()) {
 	<%=("<td>" + rs.getInt("CI_NUM")+"</td>")%>
 	<%=("<td>" + rs.getString("CI_NAME")+"</td>")%>
 	<%=("<td>" + rs.getString("CI_DESC")+"</td>")%>
-
 	<%=("</tr>")%>
 	<% 	
 }

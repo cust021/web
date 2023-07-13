@@ -36,6 +36,10 @@ while(rs.next()) {
 	<% 	
 }
 %>
+<form>
+	<label for= "uiId">아이디</label> <input type="text" id="uiId" name="uiId"><br>
+	<label for= "uiPwd">비밀번호</label><input type="password" id="uiPwd" name="uiPwd"><br>
+</form>
 
 </table>
 </body>

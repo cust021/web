@@ -9,7 +9,10 @@ String root2 = request.getContextPath();
 		<a href="<%=root%>/login.jsp">Login</a>
 		<a href="<%=root%>/join.jsp">Join</a>
 		<a href="<%=root%>/board.jsp">Board</a>
-		<a href="<%=root2%>/user.jsp">User</a>
-		<a href="<%=root2%>/class1.jsp">class1</a>
+		<a href="<%=root%>/board/board-update.jsp">Board</a>
+		<a href="<%=root%>/class.jsp">Class</a>
+		<a href="<%=root%>/user.jsp">User</a>
+		<a href="<%=root%>/class1.jsp">class1</a>
+		<a href="<%=root%>/class1.jsp">boardtest</a>
 </div>
 

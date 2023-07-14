@@ -10,6 +10,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<jsp:include page="/include/header.jsp" />
 <h3>나도 모르는 페이지</h3>
 <% 
 String biTitle = request.getParameter("biTitle");
@@ -26,7 +27,8 @@ if (biTitle != null && biTitle.length() != 0){
 	Connection con = DBCon.getCon();
 	Statement stmt = con.createStatement();
 	String sql = "INSERT INTO BOARD_INFO(BI_TITLE, BI_CONTENT, BI_WRITER,BI_CREDAT, BI_CNT)";
-	sql += " values('" + biTitle + "',')" + biContent + "','" + biWriter + "','"  + "NOW(),0" + "','"  + biCnt + "')";
+	//String sql = "SELECT INTO USER_INFO(BI_TITLE, BI_CONTENT, BI_WRITER,BI_CREDAT, BI_CNT)";
+	sql += " values('" + biTitle + "','" + biContent + "','" + biWriter + "',NOW(),'"  + biCnt + "')";
 	int result = stmt.executeUpdate(sql);
 	if (result == 1) {
 		%>

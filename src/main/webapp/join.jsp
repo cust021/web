@@ -25,6 +25,7 @@
 		Connection con = DBCon.getCon();
 		Statement stmt = con.createStatement();
 		String sql = "INSERT INTO USER_INFO(UI_ID, UI_PWD, UI_NAME)";
+		//String sql = "SELECT INTO USER_INFO(UI_ID, UI_PWD, UI_NAME)";
 		sql += " values('" + uiId + "',')" + uiPwd + "','" + uiName + "')";
 		int result = stmt.executeUpdate(sql);
 		if (result == 1) {

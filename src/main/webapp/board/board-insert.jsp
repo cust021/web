@@ -58,7 +58,6 @@ if(biTitle != null && biTitle.length() != 0){
 		<th colspan="2"><button>등록</button>
 	</tr>
 </table>
-
 </form>
 </body>
 </html>

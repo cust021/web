@@ -46,7 +46,7 @@ if(biTitle != null && biTitle.length() != 0){
 		<th>제목</th>
 		<td><input type="text" id="biTitle" name="biTitle"></td>
 	</tr>
-		<tr>
+	<tr>
 		<th>내용</th>
 		<td><textarea id="biContent" name="biContent" style="resize:none" cols="30" rows="15"></textarea></td>
 	</tr>
